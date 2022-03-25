@@ -1,7 +1,8 @@
 #! /usr/bin/env python
 
-# A part of pdfrw (https://github.com/pmaupin/pdfrw)
+# A part of (forked) pdfrw (https://github.com/sarnold/pdfrw)
 # Copyright (C) 2015 Patrick Maupin, Austin, Texas
+# Copyright (C) 2022 Stephen Arnold <nerdboy@gentoo.org>
 # MIT license -- See LICENSE.txt for details
 
 '''
@@ -15,11 +16,12 @@ checksum, or just the word "fail".
 
 These tests are incomplete, but they allow us to try
 out various PDFs.  There is a collection of difficult
-PDFs available on github.
+PDFs available on github (and as submdule in this fork).
 
 In order to use them:
 
-  1) Insure that github.com/pmaupin/static_pdfs is on your path.
+  1) Insure that you init the submodule in your clone:
+      git submodule update --init
 
   2) Use the imagemagick compare program to look at differences
      between the static_pdfs/global directory and the tmp_results
